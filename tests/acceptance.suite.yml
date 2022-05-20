@@ -1,0 +1,10 @@
+class_name: AcceptanceTester
+modules:
+         enabled:
+             - PhpBrowser:
+                 url: 'http://0.0.0.0:8080/'
+             - Yii2:
+                 part: [orm, fixtures] # allow to use AR methods
+                 cleanup: false # don't wrap test in transaction
+                 entryScript: index-test.php
+
