@@ -37,6 +37,7 @@
         "codeception/module-asserts": "^1.0.0",
         "codeception/module-phpbrowser": "^1.0",
         "codeception/c3": "^2.6",
+        "phpmd/phpmd": "@stable",
         "phploc/phploc": "@stable",
         "pdepend/pdepend": "@stable",
         "sebastian/phpcpd": "@dev",
