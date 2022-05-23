@@ -35,7 +35,7 @@
         <echo message="composer self-install complete" level="debug"/>
     </target>
 
-    <target name="composer" depends="init, self-install, self-update" if="composer.run">
+    <target name="composer" depends="init, self-update" if="composer.run">
         <condition property="composer.command" value="update" else="install">
             <available file="${composer.lock}"/>
         </condition>
