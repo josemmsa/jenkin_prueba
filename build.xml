@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="php-jenkins-example" default="full-build">
  <include file="${basedir}/build/composer.xml" as="composer"/>
+ <include file="${basedir}/build/codeception.xml" as="codeception"/>
  <property name="basedir" value="."/>
  <!-- Use this when the tools are managed by Composer in ${basedir}/vendor/bin -->
  <property name="pdepend" value="${basedir}/vendor/bin/pdepend"/>
@@ -12,7 +13,7 @@
  <property name="phpunit" value="${basedir}/vendor/bin/phpunit"/>
 
  <target name="full-build"
-         depends="prepare,static-analysis,phpunit-ci,phpdox,-check-failure"
+         depends="prepare,static-analysis,phpunit-ci,codeception.run-tests,phpdox,-check-failure"
          description="Performs static analysis, runs the tests, and generates project documentation"/>
 
  <target name="full-build-parallel"
