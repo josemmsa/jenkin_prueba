@@ -43,7 +43,6 @@
             <!--  <include / exclude filter for filelist generator, mask must follow fnmatch() requirements  -->
             <!--  Multiple elements can be added to define more than one mask per filter -->
             <include mask="${phpDox.project.source}/models/*.php"/>
-            <include mask="${phpDox.project.source}/modules/*.php"/>
             <include mask="${phpDox.project.source}/controllers/*.php"/>
             <include mask="${phpDox.project.source}/vendor/yiisoft/yii2/*.php"/>
             <exclude mask=""/>

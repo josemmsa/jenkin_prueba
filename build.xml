@@ -81,10 +81,6 @@
     <include name="**/*.php" />
    </fileset>
 
-   <fileset dir="${basedir}/modules">
-    <include name="**/*.php" />
-   </fileset>
-
    <fileset dir="${basedir}/controllers">
     <include name="**/*.php" />
    </fileset>
@@ -121,7 +117,6 @@
    <arg path="${basedir}/build/logs/phploc.xml" />
    <arg path="${basedir}/models" />
    <arg path="${basedir}/controllers" />
-   <arg path="${basedir}/modules" />
    <arg path="${basedir}/tests" />
   </exec>
 
@@ -136,7 +131,7 @@
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
    <arg value="--jdepend-chart=${basedir}/build/pdepend/dependencies.svg" />
    <arg value="--overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg" />
-   <arg path="${basedir}/models,${basedir}/controllers,${basedir}/modules,${basedir}/tests" />
+   <arg path="${basedir}/models,${basedir}/controllers,${basedir}/tests" />
   </exec>
 
   <property name="pdepend.done" value="true"/>
@@ -159,7 +154,7 @@
          depends="prepare"
          description="Perform project mess detection using PHPMD and log result in XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${phpmd}" taskname="phpmd">
-   <arg path="${basedir}/models,${basedir}/controllers,${basedir}/modules" />
+   <arg path="${basedir}/models,${basedir}/controllers" />
    <arg value="xml" />
    <arg path="${basedir}/build/phpmd.xml" />
    <arg value="--reportfile" />
@@ -195,7 +190,6 @@
    <arg value="--ignore=autoload.php" />
    <arg path="${basedir}/models" />
    <arg path="${basedir}/controllers" />
-   <arg path="${basedir}/modules" />
    <arg path="${basedir}/tests" />
   </exec>
 
@@ -221,7 +215,6 @@
    <arg path="${basedir}/build/logs/pmd-cpd.xml" />
    <arg path="${basedir}/models" />
    <arg path="${basedir}/controllers" />
-   <arg path="${basedir}/modules" />
   </exec>
 
   <property name="phpcpd.done" value="true"/>
