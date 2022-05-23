@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="codeception" basedir=".">
 
-    <property name="tests.basedir" value="${basedir}/tests"/>
+    <property name="tests.basedir" value="${basedir}"/>
     <property name="codeception.basedir" value="${tests.basedir}/codeception"/>
     <property name="codeception.script" value="${basedir}/vendor/bin/codecept"/>
     <property name="codeception.suites.default" value="" />
