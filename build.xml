@@ -48,7 +48,6 @@
          description="Cleanup build artifacts">
   <delete dir="${basedir}/runtime/*"/>
   <delete dir="${basedir}/web/assets/*"/>
-  <delete dir="${basedir}/vendor"/>
   <delete dir="${basedir}/build/api"/>
   <delete dir="${basedir}/build/coverage"/>
   <delete dir="${basedir}/build/logs"/>
