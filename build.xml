@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="php-jenkins-example" default="full-build">
+ <include file="${basedir}/build/composer.xml" as="composer"/>
  <property name="basedir" value="."/>
  <!-- Use this when the tools are managed by Composer in ${basedir}/vendor/bin -->
  <property name="pdepend" value="${basedir}/vendor/bin/pdepend"/>
@@ -58,7 +59,7 @@
 
  <target name="prepare"
          unless="prepare.done"
-         depends="clean"
+         depends="clean, composer.composer"
          description="Prepare for build">
   <mkdir dir="${basedir}/build/api"/>
   <mkdir dir="${basedir}/build/coverage"/>

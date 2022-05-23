@@ -40,7 +40,8 @@
         "phploc/phploc": "@stable",
         "pdepend/pdepend": "@stable",
         "sebastian/phpcpd": "@dev",
-        "yiisoft/yii2-coding-standards": "*"
+        "yiisoft/yii2-coding-standards": "*",
+        "theseer/phpdox": "@stable"
     },
     "config": {
         "process-timeout": 1800,
