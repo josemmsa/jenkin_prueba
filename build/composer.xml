@@ -14,7 +14,7 @@
         <available property="composer.run" file="${composer.phar}" />
     </target>
     <!-- Self-update composer -->
-    <target name="self-update" if="composer.self-update" unless="composer.installed" description="Self-update Composer">
+    <target name="self-update" if="composer.self-update" description="Self-update Composer">
         <echo message="Self-updating composer" level="debug"/>
         <exec executable="${composer.phar}">
             <arg value="self-update" />
