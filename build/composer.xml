@@ -24,7 +24,7 @@
         <echo message="composer self-update complete" level="debug"/>
     </target>
 
-    <target name="self-install" unless="composer.run" depends='exists' description="Fetch Composer if it doesn't exist">
+    <target name="self-install" unless="composer.run" description="Fetch Composer if it doesn't exist">
         <echo message="Self-installing composer" level="debug"/>
         <property name="composer.installed" value="1"/>
         <property name="composer.run" value="1" />
