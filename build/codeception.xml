@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="codeception" basedir=".">
 
-    <property name="tests.basedir" value="${basedir}"/>
-    <property name="codeception.basedir" value="${tests.basedir}/codeception"/>
+    <property name="tests.basedir" value="${basedir}/tests"/>
+    <property name="codeception.basedir" value="${tests.basedir}"/>
     <property name="codeception.script" value="${basedir}/vendor/bin/codecept"/>
     <property name="codeception.suites.default" value="" />
     <property name="codeception.options.default" value="--xml --coverage-xml --coverage-html --no-colors" />
-
+    
     <condition property="codeception.suites" value="${codeception.suites.default}">
         <not>
             <isset property="codeception.suites"/>
