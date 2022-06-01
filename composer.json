@@ -42,7 +42,7 @@
         "yiisoft/yii2-coding-standards": "*",
         "theseer/phpdox": "@stable",
         "sebastian/phpcpd": "@stable",
-        "sebastian/cli-parser": "^1.0",
+        "sebastian/cli-parser": "@stable",
         "phploc/phploc":"@stable"
     },
     "config": {
