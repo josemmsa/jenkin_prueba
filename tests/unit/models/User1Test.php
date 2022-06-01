@@ -240,7 +240,7 @@ class User1Test extends \Codeception\Test\Unit
         $this->$user->setPassword($clearTextPassword);
       }
 
-      */
+      */ 
 
 
 
