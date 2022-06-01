@@ -220,6 +220,8 @@ class User1Test extends \Codeception\Test\Unit
        * @param mixed $wrongPassword
        * 
        */
+
+       /*
       private function _mockYiiSecurity($expectedPassword, $wrongPassword = false)
       {
         $security = $this->getMockBuilder('yii\base\Security');
@@ -237,6 +239,8 @@ class User1Test extends \Codeception\Test\Unit
         $user = new User();
         $this->$user->setPassword($clearTextPassword);
       }
+
+      */
 
 
 
