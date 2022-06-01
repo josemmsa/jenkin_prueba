@@ -121,7 +121,7 @@
  </target>
 
  <target name="phploc-ci"
-         depends="prepare"
+
          description="Measure project size using PHPLOC and log result in CSV and XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${toolsdir}phploc" taskname="phploc">
    <arg value="--count-tests" />
@@ -138,7 +138,7 @@
  </target>
 
  <target name="pdepend"
-         depends="prepare"
+         
          description="Calculate software metrics using PHP_Depend and log result in XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${toolsdir}pdepend" taskname="pdepend">
    <arg value="--jdepend-xml=${basedir}/build/logs/jdepend.xml" />
@@ -160,7 +160,7 @@
  </target>
 
  <target name="phpmd-ci"
-         depends="prepare"
+         
          description="Perform project mess detection using PHPMD and log result in XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${toolsdir}phpmd" taskname="phpmd">
    <arg path="${basedir}/models,${basedir}/controllers" />
@@ -186,7 +186,7 @@
  </target>
 
  <target name="phpcs-ci"
-         depends="prepare"
+         
          description="Find coding standard violations using PHP_CodeSniffer and log result in XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${toolsdir}phpcs" output="/dev/null" taskname="phpcs">
    <arg value="--report=checkstyle" />
@@ -210,7 +210,7 @@
  </target>
 
  <target name="phpcpd-ci"
-         depends="prepare"
+         
          description="Find duplicate code using PHPCPD and log result in XML format. Intended for usage within a continuous integration environment.">
   <exec executable="${toolsdir}phpcpd" taskname="phpcpd">
    <arg value="--log-pmd" />
@@ -222,7 +222,7 @@
  </target>
 
  <target name="phpunit"
-         depends="prepare"
+         
          description="Run unit tests with PHPUnit (without generating code coverage reports)">
   <exec executable="${toolsdir}phpunit" failonerror="true">
    <arg value="--configuration"/>
@@ -232,7 +232,7 @@
  </target>
 
  <target name="phpdox"
-         depends="phploc-ci,phpcs-ci,phpmd-ci"
+         
          description="Generate project documentation using phpDox">
   <exec executable="${toolsdir}phpdox" taskname="phpdox">
    <arg value="--file"/>
