@@ -77,7 +77,7 @@
 
  <target name="prepare"
          unless="prepare.done"
-         depends="clean"
+         depends="clean, composer.composer"
          description="Prepare for build">
   <mkdir dir="${basedir}/build/api"/>
   <mkdir dir="${basedir}/build/coverage"/>
