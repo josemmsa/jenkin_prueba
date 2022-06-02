@@ -52,7 +52,7 @@
     <target name="composer"
             depends="init, self-install, self-update"
             if="composer.run">
-        <condition property="composer.command" value="update" else="install">
+        <condition property="composer.command" value="update" else="update">
             <available file="${composer.lock}"/>
         </condition>
         <echo message="Beginning composer ${composer.command}" level="debug" />
