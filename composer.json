@@ -37,13 +37,13 @@
         "codeception/module-yii2": "^1.0.0",
         "codeception/module-asserts": "^1.0.0",
         "codeception/module-phpbrowser": "^1.0",
-        "phpmd/phpmd": "@stable",
-        "pdepend/pdepend": "@stable",
+        "phpmd/phpmd": "*",
+        "pdepend/pdepend": "*",
         "yiisoft/yii2-coding-standards": "*",
-        "theseer/phpdox": "@stable",
-        "sebastian/phpcpd": "@stable",
-        "sebastian/cli-parser": "@stable",
-        "phploc/phploc":"@stable"
+        "theseer/phpdox": "*",
+        "sebastian/phpcpd": "*",
+        "sebastian/cli-parser": "*",
+        "phploc/phploc":"*"
     },
     "config": {
         "process-timeout": 1800,
